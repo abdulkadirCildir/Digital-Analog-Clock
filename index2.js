@@ -17,9 +17,11 @@ function getTime() {
 
 
     const hours = now.getHours();
-    const hoursDegree = (((hours / 60) * 360) + 90);
+    const hoursDegree = (((hours / 60) * 360) + 140);
     hourHand.style.transform = `rotate(${hoursDegree}deg)`
 
+    console.log(hours);
+    console.log(hoursDegree);
 }
 
 setInterval(getTime, 1000);
